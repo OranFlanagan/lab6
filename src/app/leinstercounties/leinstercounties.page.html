@@ -1,16 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- Back button at the start of the toolbar -->
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <!-- Title of the page -->
     <ion-title>Leinster Counties</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Main content area of the page -->
 <ion-content [fullscreen]="true">
+  <!-- Unordered list to display counties -->
   <ul>
+    <!-- Loop through the 'counties' array and create a list item for each county -->
     <li *ngFor="let x of counties">
-        {{x}}
+        {{x}} <!-- Display the county name -->
     </li>
   </ul>
 </ion-content>
+
