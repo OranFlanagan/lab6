@@ -1,13 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- Back button at the start of the toolbar -->
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <!-- Title in the toolbar -->
     <ion-title>Leinster</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Main content section with fullscreen enabled -->
 <ion-content [fullscreen]="true">
+  <!-- Displaying an image of the Leinster flag -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Leinster.svg">
-  <ion-button  [routerLink]="['/leinstercounties']">Click to see leinster counties</ion-button>
+  
+  <!-- Button that navigates to the Leinster counties page when clicked -->
+  <ion-button [routerLink]="['/leinstercounties']">
+    Click to see Leinster counties
+  </ion-button>
 </ion-content>
