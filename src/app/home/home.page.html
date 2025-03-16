@@ -1,22 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- Title of the page -->
     <ion-title>
       Provinces of Ireland
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Main content section with fullscreen enabled -->
 <ion-content [fullscreen]="true">
+  <!-- Secondary header that appears when scrolling (collapsible effect) -->
   <ion-header collapse="condense">
     <ion-toolbar>
+      <!-- Larger title displayed when the header is collapsed -->
       <ion-title size="large">Provinces of Ireland</ion-title>
     </ion-toolbar>
   </ion-header>
 
+  <!-- List of provinces with navigation links -->
   <ul>
+    <!-- Clicking these links will bring you to the differient provincis pages -->
     <li [routerLink]="['/ulster']">Ulster</li>
     <li [routerLink]="['/munster']">Munster</li>
     <li [routerLink]="['/leinster']">Leinster</li>
     <li [routerLink]="['/connacht']">Connacht</li>
   </ul>
-</ion-content>
+</ion-content>  
